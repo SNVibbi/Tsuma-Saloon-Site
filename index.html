@@ -135,6 +135,32 @@
                 <p>Phone: +23448987339</p>
             </address>
         </section>
+
+        <!-- Booking Form -->
+        <section class="booking">
+            <div id="booking-form-container">
+                <h2>Book Your Appointment</h2>
+                <form id="booking-form">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <select id="service">
+                        <option value="" disabled selected>Select Service</option>
+                        <option value="haircut">Haircut</option>
+                        <option value="color">Color</option>
+                        <option value="plate">Plate</option>
+                        <option value="facial">Facial Scrub</option>
+                        <option value="hairwash">Hair Wash</option>
+                    </select>
+                    <input type="date" id="date" required>
+                    <input type="time" id="time" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <!-- Modal -->
+            <div id="modal" class="hidden">
+                <p>Booking Confirmed!</p>
+                <button id="close-modal">Close</button>
+            </div>
+        </section>
     
         <section id="feedback">
             <div class="feedback-container">
