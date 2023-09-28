@@ -128,6 +128,79 @@ address {
 }
 
 
+/* Form */
+#booking-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(248, 213, 171);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    margin: auto;
+}
+
+#booking-form input, #booking-form select {
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: rgb(117, 106, 106);
+    color: #fff;
+}
+
+#booking-form input::placeholder{
+    color: #fff;
+}
+
+#booking-form button {
+    align-self: flex-end;
+    background: linear-gradient(45deg,#007bff, #0056b3);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+#booking-form button:hover {
+    background: llinear-gradient(45deg, #0056b3, #003580);
+}
+
+/* Modal */
+/* #modal {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+} */
+
+/* #modal-content {
+    background-color: rgb(246, 230, 210);
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+#close-modal {
+    justify-self: center;
+    background: linear-gradient(45deg, #0056b3, #003580);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Hide the Modal initially */
+.hidden {
+    display: none;
+}
 /* BUTTON */
 
 .buy-button, .book-button {
@@ -228,6 +301,9 @@ foot {
 
     .footer-section {
         margin-bottom: 1em;
+    }
+    #booking-form-container {
+        width: 500px;
     }
 }
 
